@@ -11,9 +11,9 @@ module.exports = {
 	serverPort: 8080,
 
 	// 密码盐
-	encrypt_key: 'baoxiao_uucc5',
-	salt_aes_key: "baoxiao_", // 可以解密，秘钥必须为：8/16/32位
-	salt_md5_key: "baoxiao_uucc5", // MD5的盐，用于加密密码
+  encrypt_key: 'dora',
+  salt_aes_key: "doracms_", // 可以解密，秘钥必须为：8/16/32位
+  salt_md5_key: "dora", // MD5的盐，用于加密密码
 
 	//    数据库配置
 	URL: 'mongodb://127.0.0.1:27017/doracms2',
