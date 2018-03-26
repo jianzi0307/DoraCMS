@@ -16,7 +16,7 @@ module.exports = {
   salt_md5_key: "dora", // MD5的盐，用于加密密码
 
   //    数据库配置
-  URL: 'mongodb://127.0.0.1:27017/doracms2',
+  URL: 'mongodb://doramart:doramart@127.0.0.1:27017/doracms2',
   DB: 'doracms2',
   HOST: '127.0.0.1',
   PORT: 27017,
