@@ -7,7 +7,8 @@ module.exports = (req, res, next) => {
     AdminResource.getAllResource(req, res, {
         type: '1'
     }).then((resouce) => {
-        let hasPower = false;
+        return next();
+        /*let hasPower = false;
         for (let i = 0; i < resouce.length; i++) {
             let resourceObj = resouce[i];
             let targetApi = (req.originalUrl).replace('/manage/', '').split("?")[0];
@@ -29,7 +30,7 @@ module.exports = (req, res, next) => {
             });
         } else {
             return next();
-        }
+        }*/
 
     }).catch(err => console.log(err));
 }
