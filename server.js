@@ -1,6 +1,6 @@
 process.env.VUE_ENV = 'server'
-process.env.NODE_ENV = 'production'
-const isProd = process.env.NODE_ENV === 'production'
+//const isProd = process.env.NODE_ENV === 'production'
+const isProd = true
 global.NODE_ENV = isProd
 const useMicroCache = process.env.MICRO_CACHE !== 'false'
 
