@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
     AdminResource.getAllResource(req, res, {
         type: '1'
     }).then((resouce) => {
-        return next();
+        return next()
         /*let hasPower = false;
         for (let i = 0; i < resouce.length; i++) {
             let resourceObj = resouce[i];
