@@ -5,23 +5,23 @@
 
 module.exports = {
 
-	session_secret: 'doracms', // 务必修改
-	auth_cookie_name: 'doracms',
+	session_secret: 'baoxiao_uucc5', // 务必修改
+	auth_cookie_name: 'baoxiao_uucc5',
 	cache_maxAge: Math.floor(Date.now() / 1000) + 24 * 60 * 60, //1 hours
 	serverPort: 8080,
 
 	// 密码盐
-	encrypt_key: 'dora',
-	salt_aes_key: "doracms_", // 可以解密，秘钥必须为：8/16/32位
-	salt_md5_key: "dora", // MD5的盐，用于加密密码
+	encrypt_key: 'baoxiao_uucc5',
+	salt_aes_key: "baoxiao_", // 可以解密，秘钥必须为：8/16/32位
+	salt_md5_key: "baoxiao_uucc5", // MD5的盐，用于加密密码
 
 	//    数据库配置
-	URL: 'mongodb://127.0.0.1:27017/doracms2',
-	DB: 'doracms2',
+	URL: 'mongodb://127.0.0.1:27017/db_uucc5_baoxiao',
+	DB: 'db_uucc5_baoxiao',
 	HOST: '127.0.0.1',
 	PORT: 27017,
-	USERNAME: 'doracms',
-	PASSWORD: 'password',
+	USERNAME: 'uucc5baoxiao',
+	PASSWORD: 'uucc5_baoxiao_2018',
 
 	// 七牛配置
 	openqn: false,//是否开启,若为true 则下面的信息必须配置正确完整
