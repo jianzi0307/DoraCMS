@@ -9,7 +9,7 @@
     "pid_file": "pids/baoxiao.pid",
     "exec_interpreter": "node",
     "exec_mode": "cluster_mode",
-    "instances": 6,
+    "instances": 2,
     "min_uptime": "200s",
     "max_restarts": 10,
     "watch": false,
