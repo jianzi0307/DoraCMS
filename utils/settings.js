@@ -16,12 +16,12 @@ module.exports = {
 	salt_md5_key: "baoxiao_uucc5", // MD5的盐，用于加密密码
 
 	//    数据库配置
-	URL: 'mongodb://127.0.0.1:27017/db_uucc5_baoxiao',
-	DB: 'db_uucc5_baoxiao',
+	URL: 'mongodb://127.0.0.1:27017/doracms2',
+	DB: 'doracms2',
 	HOST: '127.0.0.1',
 	PORT: 27017,
-	USERNAME: 'uucc5baoxiao',
-	PASSWORD: 'uucc5_baoxiao_2018',
+	USERNAME: 'doramart',
+	PASSWORD: 'doramart',
 
 	// 七牛配置
 	openqn: false,//是否开启,若为true 则下面的信息必须配置正确完整
