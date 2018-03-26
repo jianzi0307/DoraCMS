@@ -67,9 +67,6 @@
                                     <router-link :to="{path: '/'+nav.defaultUrl+ '___'+nav._id}">{{nav.name}}
                                     </router-link>
                                 </li>
-                                <li :class="{active : $route.fullPath == '/cmscase___SkCL09aCb'}">
-                                    <router-link :to="{path: '/cmscase___SkCL09aCb'}">应用案例</router-link>
-                                </li>
                             </ul>
                         </nav>
                     </el-col>
