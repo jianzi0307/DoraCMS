@@ -1,0 +1,17 @@
+{
+  "apps": {
+    "name": "baoxiao",
+    "cwd": "/root/webapp/DoraCMS",
+    "script": "./server",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "error_file": "/root/.pm2/logs/baoxiao.stderr.log",
+    "out_file": "/root/.pm2/logs/baoxiao.stdout.log",
+    "pid_file": "pids/baoxiao.pid",
+    "exec_interpreter": "node",
+    "exec_mode": "cluster_mode",
+    "instances": 6,
+    "min_uptime": "200s",
+    "max_restarts": 10,
+    "watch": false
+  }
+}
