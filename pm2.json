@@ -12,6 +12,9 @@
     "instances": 6,
     "min_uptime": "200s",
     "max_restarts": 10,
-    "watch": false
+    "watch": false,
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
 }
