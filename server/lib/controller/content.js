@@ -355,10 +355,15 @@ class Content {
         comments: fields.comments
       }
 
+      console.log("1>>>>contentObj ", contentObj);
+      console.log("2>>>>fields ", contentObj);
+      console.log("3>>>>role ", role);
+
       if (role === 'user' || fields.from === '3') {
+        console.log("req.session.user::: ", req.session);
         contentObj.markDownComments = fields.markDownComments;
         contentObj.comments = marked(
-          (fields.markDownComments).replace(/<!--more-->/g, "")
+          (fields.markDownComments).replace(/\<!--more-->/g, "")
         )
         contentObj.stitle = contentObj.title;
         contentObj.from = fields.from;
