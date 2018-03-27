@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 const isProd = process.env.NODE_ENV === 'production'
 const {settings} = require('../../../utils');
-
-
-console.log("我我哦我我我我:::", process.env.NODE_ENV)
-
 var options = {
   useMongoClient: true
 };
