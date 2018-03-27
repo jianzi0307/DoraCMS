@@ -3,10 +3,6 @@ const isProd = process.env.NODE_ENV === 'production'
 const {settings} = require('../../../utils');
 
 var options = {
-  server: {
-    auto_reconnect: true,
-    poolSize: 10
-  },
   useMongoClient: true
 };
 if (!isProd) {
