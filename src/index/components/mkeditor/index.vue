@@ -33,7 +33,7 @@
         >
         <i class="el-icon-upload"></i>
         <div class="el-dragger__text">将文件拖到此处，或<em>点击上传</em></div>
-        <div class="el-upload__tip" slot="tip">图片只能是 JPG,PNG,GIF 格式!不大于2M</div>
+        <div class="el-upload__tip" slot="tip">图片只能是 JPG,PNG,GIF 格式!不大于5M</div>
       </el-upload>
     </el-dialog>
 
@@ -189,12 +189,12 @@ export default {
       const isJPG = file.type === "image/jpeg";
       const isPNG = file.type === "image/png";
       const isGIF = file.type === "image/gif";
-      const isLt2M = file.size / 1024 / 1024 < 2;
+      const isLt2M = file.size / 1024 / 1024 < 5;
       if (!isJPG && !isPNG && !isGIF) {
         this.$message.error("上传头像图片只能是 JPG,PNG,GIF 格式!");
       }
       if (!isLt2M) {
-        this.$message.error("上传头像图片大小不能超过 2MB!");
+        this.$message.error("上传头像图片大小不能超过 5MB!");
       }
       return (isJPG || isPNG || isGIF) && isLt2M;
     },
