@@ -347,7 +347,6 @@ class Content {
         keywords: fields.keywords,
         sImg: fields.sImg,
         author: !_.isEmpty(req.session.adminUserInfo) ? req.session.adminUserInfo._id : '',
-        uAuthor: fields.uAuthor._id,
         state: fields.state,
         isTop: fields.isTop,
         from: fields.from,
